@@ -160,7 +160,7 @@ maskealgilama/
 ### Kullanılan Teknolojiler
 
 - **OpenCV**: Görüntü işleme ve yüz algılama
-- **TensorFlow/Keras**: Derin öğrenme framework
+- **TensorFlow/Keras**: Derin öğrenme framework (tf.keras kullanılır - güvenlik için)
 - **MobileNetV2**: Transfer öğrenme için temel model
 - **NumPy**: Sayısal hesaplamalar
 - **Matplotlib**: Görselleştirme

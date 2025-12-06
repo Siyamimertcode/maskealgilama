@@ -1,5 +1,25 @@
 # Değişiklik Günlüğü / Changelog
 
+## [1.0.1] - 2025-12-06
+
+### Security / Güvenlik
+
+- **CRITICAL FIX**: Removed standalone `keras==2.15.0` dependency which had multiple vulnerabilities:
+  - Directory Traversal Vulnerability (CVE affecting versions <= 3.11.3)
+  - Path Traversal in keras.utils.get_file API (versions < 3.12.0)
+  - Deserialization of Untrusted Data (versions < 3.11.0)
+  - Arbitrary Code Execution vulnerability (versions < 3.9.0)
+- **Güvenlik Güncellemesi**: Bağımsız `keras==2.15.0` bağımlılığı kaldırıldı
+- Now using `tensorflow.keras` (tf.keras) which is the recommended and secure approach
+- Updated `tensorflow` to version 2.15.1
+- All code already uses `tensorflow.keras` - no breaking changes
+
+### Changed / Değiştirilen
+
+- `requirements.txt` - Removed standalone keras package
+- `requirements.txt` - Updated TensorFlow to 2.15.1
+- `README.md` - Clarified that tf.keras is used for security
+
 ## [1.0.0] - 2025-12-06
 
 ### Added / Eklenen
