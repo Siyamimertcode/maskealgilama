@@ -127,3 +127,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Mask Detection specific files
+*.model
+*.caffemodel
+*.prototxt
+*.h5
+training_plot.png
+output.jpg
+result.jpg
+
+# Dataset folders
+dataset/
+sample_dataset/
+data/
+
+# Temporary files
+*.tmp
+*.temp
